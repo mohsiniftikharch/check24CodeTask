@@ -1,0 +1,15 @@
+<div>
+  <div class="panel-body">
+    <table class="mat-calendar-table-header">
+      <h1>Bookstore IT Books</h1>
+      <tbody>
+      <tr *ngFor="let book of bookData">
+        <td>{{book.id}}</td>
+        <td>{{book.name}}</td>
+        <td>{{book.details}}</td>
+        <td>{{book.image}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,27 @@
+<div style="text-align:center">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span class="align-center"></span>
+      <span class="spacer"></span>
+      <button mat-button routerLink="task/login">Login</button>
+      <button mat-button routerLink="task/books">Books</button>
+      <button mat-button routerLink="task/details">Details</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <mat-icon>dialpad</mat-icon>
+          <span>Redial</span>
+        </button>
+        <button mat-menu-item disabled>
+          <mat-icon>voicemail</mat-icon>
+          <span>Check voicemail</span>
+        </button>
+        <button mat-menu-item>
+          <mat-icon>notifications_off</mat-icon>
+          <span>Disable alerts</span>
+        </button>
+      </mat-menu>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
+
+<router-outlet></router-outlet>
